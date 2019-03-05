@@ -1,7 +1,7 @@
 # LemonAd MN installation guide on a Linux server running Ubuntu 16.04. Use it on your own risk.
 
 
-## VPS installation for version **1.3.1.0**
+## VPS installation for the latest version
 ```
 wget -N https://raw.githubusercontent.com/lemonad-project/masternode-install/master/mn.sh
 chmod +x mn.sh
