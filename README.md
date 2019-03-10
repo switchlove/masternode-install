@@ -5,7 +5,7 @@
 ```
 wget -N https://raw.githubusercontent.com/lemonad-project/masternode-install/master/mn.sh
 chmod +x mn.sh
-bash ms.sh
+bash mn.sh
 ```
 ***
 
