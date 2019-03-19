@@ -5,7 +5,8 @@ CONFIG_FILE='lemonad.conf'
 CONFIGFOLDER='/root/.lemonad'
 COIN_DAEMON='lemonadd'
 COIN_CLI='lemonad-cli'
-COIN_PATH='/usr/local/'
+COIN_PATH='/usr/local/bin/'
+COIN_PATH_MOVE='/usr/local/'
 COIN_TGZ='https://github.com/lemonad-project/lemonad/releases/download/v1.0.3.0/lemonad-1.0.3-x86_64-linux-gnu.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='lemonad'
@@ -38,7 +39,7 @@ function download_node() {
   compile_error
   tar xvzf $COIN_ZIP >/dev/null 2>&1
   pushd $FOLDER_SRC
-  cp -rf * $COIN_PATH
+  cp -rf * $COIN_PATH_MOVE
   popd
   cd - >/dev/null 2>&1
   rm -rf $TMP_FOLDER >/dev/null 2>&1
