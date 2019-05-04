@@ -7,12 +7,12 @@ COIN_DAEMON='lemonadd'
 COIN_CLI='lemonad-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_PATH_MOVE='/usr/local/'
-COIN_TGZ='https://github.com/lemonad-project/lemonad/releases/download/v1.0.3.0/lemonad-1.0.3-x86_64-linux-gnu.tar.gz'
+COIN_TGZ='https://github.com/lemonad-project/lemonad/releases/download/v1.0.4.0/lemonad-1.0.4-x86_64-linux-gnu.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='lemonad'
 COIN_PORT=52271
 RPC_PORT=52273
-FOLDER_SRC=lemonad-1.0.3
+FOLDER_SRC=lemonad-1.0.4
 #COIN_BLOCKS='bootstrap URL'
 
 NODEIP=$(curl -s4 icanhazip.com)
