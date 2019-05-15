@@ -1,4 +1,7 @@
 #!/bin/bash
+# Requires GoLang & https://github.com/itchio/gothub
+# Idealy runs on a weekly cron:
+# 0 0 * * 0 /bin/bash YOURPATH/gen_bootstrap.sh
 TAG=$(date +"%m.%d.%y")
 DATE=$(date)
 TITLE='Bootstrap'
